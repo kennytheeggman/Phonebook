@@ -8,7 +8,7 @@ import java.util.List;
 @Repository("phonebook")
 public class PersonDataAccessService implements PersonDao {
 
-    private static List<Person> DB = PersonDataPersistence.readFile("D:\\Downloads\\Documents\\Work\\Phonebook\\project\\database.csv");
+    private static List<Person> DB = PersonDataPersistence.readFile("project\\database.csv");
 
     @Override
     public int addPerson(Person person) {
