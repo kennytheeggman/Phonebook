@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class PersonDataPersistence {
     public static void writeDB(List<Person> DB) {
         try {
-            FileWriter writer = new FileWriter("D:\\Downloads\\Documents\\Work\\Phonebook\\project\\database.csv");
+            FileWriter writer = new FileWriter("project\\database.csv");
             for (Person person : DB) {
                 String write = person.getName() + "," + person.getNumber() + "\n";
                 writer.write(write);
